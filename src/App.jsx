@@ -5,25 +5,28 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import LazyComponent from './components/LazyComponent'
 const App = () => {
   return (
     <div className='text-white'>
 
       <Navbar />
-
-
       <Banner />
-      <div className='border-1 h-1 border-gray-700 shadow '></div>
-      <div className='min-h-screen flex items-center justify-center'>
 
+
+      <div className='border-1 h-1 border-gray-700 shadow '></div>{/** Separator */}
+      
+      <div className='min-h-screen flex items-center justify-center'>
         <About />
       </div>
-      <div className='border-1 h-1 border-gray-700 shadow '></div>
+
+      <div className='border-1 h-1 border-gray-700 shadow '></div> {/** Separator */}
+
       <div className='min-h-screen flex items-center justify-center '>
 
         <Projects />
       </div>
-      <div className='border-1 h-1 border-gray-700 shadow '></div>
+      <div className='border-1 h-1 border-gray-700 shadow '></div>{/** Separator */}
 
 
       <div className='min-h-screen flex items-center justify-center'>

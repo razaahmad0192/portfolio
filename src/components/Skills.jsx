@@ -7,14 +7,14 @@ import { FaCode } from "react-icons/fa";
 import { GoDatabase } from "react-icons/go";
 import { HiOutlineCpuChip } from "react-icons/hi2";
 
-function Skills() {
+function Skills({Class=""}) {
     return (
-        <section id='skills' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
+        <section id='skills' className={`md:container md:mx-auto py-10 px-4 ${Class} flex flex-col gap-10`}>
             <div className='heading-about'>
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
                     Skills
                 </h2>
-                <div className='border-2 w-18 border-blue-500'></div>
+                <div className='border-2 w-12 md:w-18 border-blue-500'></div>
             </div>
             <div className="sub-section flex flex-col gap-5 ">
                 <p>

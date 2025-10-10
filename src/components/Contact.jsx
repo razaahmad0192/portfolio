@@ -33,7 +33,7 @@ function Contact() {
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
                     Get In Touch
                 </h2>
-                <div className='border-2 w-28 border-blue-500'></div>
+                <div className='border-2 w-18 md:w-28 border-blue-500'></div>
             </div>
             <div className="sub-section flex flex-col gap-10 ">
                 <p className='text-gray-400'>

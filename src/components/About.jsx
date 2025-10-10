@@ -11,7 +11,7 @@ const About = () => {
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
                     About Me
                 </h2>
-                <div className='border-2 w-24 border-blue-500'></div>
+                <div className='border-2 md:w-24 w-16 border-blue-500'></div>
             </div>
             <div className="about  w-full flex md:flex-row  md:justify-center  flex-col  md:items-start justify-center ">
 

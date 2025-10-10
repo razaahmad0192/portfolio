@@ -31,3 +31,18 @@ html {
   scroll-padding-top: 80px; 
   scroll-behavior: smooth;
 }
+:root{
+  --primary-color: white;
+  --secondary-color : rgb(31, 41, 55);;
+  --blue-color : #3B82F6;
+
+}
+.blu4e{
+  color: var(--blue-color);
+}
+.gray{
+  color: var(--secondary-color);
+}
+.white{
+  color: var(--primary-color);
+}
