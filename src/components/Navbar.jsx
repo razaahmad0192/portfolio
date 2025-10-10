@@ -13,7 +13,6 @@ const Navbar = () => {
         <li>About</li>
         <li>Projects</li>
         <li>Skills</li>
-        <li>Achievements</li>
         <li>Contact</li>
         <li><FaMoon/></li>
         <li><button className='px-3 py-2 bg-blue-500 rounded-lg border-0 text-black hover:bg-blue-600'>Resume</button></li>

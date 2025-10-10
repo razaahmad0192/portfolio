@@ -4,20 +4,43 @@ import Banner from './components/Banner'
 import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
+import Contact from './components/Contact'
 const App = () => {
   return (
     <section className='text-white'>
-     
-      <Navbar/>
-     
 
-      <Banner/>
+      <Navbar />
+
+
+      <Banner />
       <div className='border-1 h-1 border-gray-700 shadow '></div>
-      <About/>
+       <div className='min-h-screen flex items-center justify-center'>
+
+      <About />
+       </div>
       <div className='border-1 h-1 border-gray-700 shadow '></div>
-      <Projects/>
-       <div className='border-1 h-1 border-gray-700 shadow '></div>
-      <Skills/>
+       <div className='min-h-screen flex items-center justify-center '>
+        
+      <Projects />
+       </div>
+      <div className='border-1 h-1 border-gray-700 shadow '></div>
+   
+   
+    <div className='min-h-screen flex items-center justify-center'>
+
+      <Skills />
+    </div>
+
+
+
+      <div className='border-1 h-1 border-gray-700 shadow '></div>
+
+
+
+
+      <div className='min-h-screen flex items-center justify-center'>
+        <Contact />
+      </div>
     </section>
   )
 }

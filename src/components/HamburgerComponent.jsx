@@ -25,7 +25,6 @@ export default function HamburgerComponent() {
                     <li>About</li>
                     <li>Projects</li>
                     <li>Skills</li>
-                    <li>Achievements</li>
                     <li>Contact</li>
                     <li><button className='px-6 py-2 bg-blue-500 rounded-lg border-0 text-black hover:bg-blue-600'>Resume</button></li>
                 </ul>
