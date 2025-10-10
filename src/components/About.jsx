@@ -24,7 +24,10 @@ const About = () => {
                             Bio
                         </h4>
                         <p className='pt-2 text-sm'>
-                            I'm a self-taught Web Developer and Ethical Hacker with experience in designing and developing high-performance applications — from ideation to production. I focus on writing clean, reusable, and efficient code while keeping user experience and security in mind. Alongside development, I specialize in penetration testing, identifying and mitigating vulnerabilities in web applications to ensure secure deployments. I love combining design, technology, and cybersecurity to build solutions that are not only functional but also resilient. Currently, my focus is on backend development and web application security.
+                            I'm a self-taught <b>Web Developer</b> and <b>Ethical Hacker</b> with experience in designing and developing high-performance applications, from ideation to production. <br />
+                            Alongside development, I specialize in penetration testing, identifying and mitigating vulnerabilities in web applications to ensure secure deployments. <br />
+                            I love combining design, technology, and cybersecurity to build solutions that are not only functional but also resilient. <br />
+                            Currently, my focus is on backend development and web application security.
                         </p>
                     </div>
 
