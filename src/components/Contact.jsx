@@ -12,21 +12,22 @@ function Contact() {
         e.preventDefault();
 
         const formData = new FormData(e.target);
-
+        
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-            .then(() => {
-                toast.success("Message sent successfully!");
-                e.target.reset(); // optional: clears the form
-            })
-            .catch((error) => toast.error("Something went wrong. Try again."))
+        .then(() => {
+            toast.success("Message sent successfully!");
+            e.target.reset(); // optional: clears the form
+        })
+        .catch((error) => toast.error("Something went wrong. Try again."))
     }
     return (
-
+        
         <section className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
+            <Toaster position="md:top-right " />
 
             <div className='heading-about'>
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
@@ -112,21 +113,8 @@ function Contact() {
                             </div>
                         </div>
                     </div>
-                    {/* Hidden static form for Netlify detection */}
-                    <form
-                        name="contact"
-                        method="POST"
-                        data-netlify="true"
-                        netlify-honeypot="bot-field"
-                        style={{ display: "none" }}
-                    >
-                        <input type="text" name="name" />
-                        <input type="email" name="email" />
-                        <input type="text" name="subject" />
-                        <textarea name="message" />
-                    </form>
+                  
                     <div className='COntact-form border rounded-xl border-gray-800 md:px-6 px-2 md:pt-12 pt-5 pb-6 md:w-full flex flex-col gap-4'>
-                        <Toaster position="md:top-right " />
                         <form
                             name="contact"
                             method="POST"

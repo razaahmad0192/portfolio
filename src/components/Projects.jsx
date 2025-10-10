@@ -21,7 +21,7 @@ const Projects = () => {
                 </p>
                 <div className='project-cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 '>
                     <ProjectCard
-                        thumbnail='/src/assets/spotify.PNG'
+                        thumbnail='/assets/spotify.png'
                         name='Spotify - Media Player'
                         disc='A dynamic music player that reads songs directly from a local directory and plays them with full controls. Built with JavaScript, it mimics Spotify’s interface with playlist handling, progress tracking, and responsive design.'
                         isGithub={true}
@@ -32,7 +32,7 @@ const Projects = () => {
                         tech3='Vanilla JavaScript'
                     />
                     <ProjectCard
-                        thumbnail='/src/assets/netflix.PNG'
+                        thumbnail='/assets/netflix.PNG'
                         name='Netflix - Landing Page '
                         disc='A responsive front-end clone of Netflix’s homepage built with HTML, CSS, and Vanilla JavaScript. Features smooth animations, interactive UI elements, and a modern layout inspired by the original design.'
                         isGithub={true}
@@ -44,7 +44,7 @@ const Projects = () => {
                         tech3='Vanilla JavaScript'
                     />
                     <ProjectCard
-                        thumbnail='/src/assets/todo.PNG'
+                        thumbnail='/assets/todo.PNG'
                         name='iTask - ToDo List Manager'
                         disc='A simple and responsive task manager built with React and TailwindCSS. Users can add, edit, delete, and mark tasks as complete, with data saved in local storage for persistence. Tasks of user will remain saved in Browser.'
                         isGithub={true}
@@ -60,7 +60,7 @@ const Projects = () => {
                 {/* Hidden Cards */}
                 <div className={`${showAll ? 'grid' : 'hidden'}  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5`}> 
                     <ProjectCard
-                        thumbnail='/src/assets/x.PNG'
+                        thumbnail='/assets/x.PNG'
                         name='X - Tweet Page'
                         disc='A modern Twitter-style interface built with Tailwind CSS. Features a clean, responsive design that replicates the tweet posting layout, showcasing UI precision and styling skills using utility-first CSS.'
                         isGithub={true}

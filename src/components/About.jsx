@@ -83,7 +83,7 @@ const About = () => {
 
                 <div className='md:w-[25%] sm:w-[60%] w-[100%] mx-auto  flex flex-col gap-4 p-4'>
                     <div className="dp">
-                        <img className='w-full rounded-full ' src="/src/assets/pic.jpg" alt="" />
+                        <img className='w-full rounded-full ' src="/assets/pic.jpg" alt="" />
                     </div>
                     <div className='name&profession'>
                         <h2 className='font-bold text-2xl'>
