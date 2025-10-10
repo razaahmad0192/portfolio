@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaGithub } from "react-icons/fa";
-
+import MotionCard from './MotionCard';
 function ProjectCard({
     thumbnail = "",
     name = "",
@@ -17,13 +17,16 @@ function ProjectCard({
 
 }) {
     return (
+        <>
+      <MotionCard>
+      
         <div className='border md:min-h-110 min-h-115 flex flex-col gap-5 p-3 bg-gray-800 rounded-xl  '>
             <div className="thumbNail w-full h-80   ">
                 <img className='object-cover w-full h-full rounded-t-2xl' src={`${thumbnail}`} alt="thumbnail" />
             </div>
             <div className='flex flex-col gap-3 '>
                 <h2 className='font-medium text-xl '>{`${name}`}</h2>
-                <p className='font-normal text-sm md:text-lg text-gray-300'>
+                <p className='font-normal text-xs md:text-sm text-gray-300 '>
                     {`${disc}`}
                 </p>
                 <div className='text-xs flex gap-1.5'>
@@ -61,6 +64,8 @@ function ProjectCard({
             </div>
 
         </div>
+          </MotionCard>
+          </>
     )
 }
 

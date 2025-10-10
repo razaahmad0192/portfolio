@@ -29,7 +29,7 @@ export default function HamburgerComponent() {
                             duration={700}     // scroll speed in ms
                             spy={true}         // highlights link when section in view (optional)
                             offset={-70}       // optional, adjusts for navbar height
-                        >Home</Link>
+                        ><button className='w-full'>Home</button> </Link>
                     </li>
                     <li>
                         <Link
@@ -38,7 +38,7 @@ export default function HamburgerComponent() {
                             duration={700}     // scroll speed in ms
                             spy={true}         // highlights link when section in view (optional)
                             offset={-70}       // optional, adjusts for navbar height
-                        >About</Link>
+                        ><button className='w-full'>About</button> </Link>
                     </li>
                     <li>
                         <Link
@@ -47,7 +47,7 @@ export default function HamburgerComponent() {
                             duration={700}     // scroll speed in ms
                             spy={true}         // highlights link when section in view (optional)
                             offset={-70}       // optional, adjusts for navbar height
-                        >Projects</Link>
+                        ><button className='w-full'>Projects</button> </Link>
                     </li>
                     <li>
                         <Link
@@ -56,7 +56,7 @@ export default function HamburgerComponent() {
                             duration={700}     // scroll speed in ms
                             spy={true}         // highlights link when section in view (optional)
                             offset={-70}       // optional, adjusts for navbar height
-                        >Skills</Link>
+                        ><button className='w-full'>Skills</button> </Link>
                     </li>
                     <li>
                         <Link
@@ -65,9 +65,9 @@ export default function HamburgerComponent() {
                             duration={700}     // scroll speed in ms
                             spy={true}         // highlights link when section in view (optional)
                             offset={-70}       // optional, adjusts for navbar height
-                        >Contact</Link>
+                        ><button className='w-full'>Contact</button> </Link>
                     </li>
-                    <li><button className='px-6 py-2 bg-blue-500 rounded-lg border-0 text-black hover:bg-blue-600'>Resume</button></li>
+                    <li><a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer"><button className='w-full px-6 py-2 bg-blue-500 rounded-lg border-0 text-black hover:bg-blue-600'>Resume</button></a></li>
                 </ul>
             </div>
         }

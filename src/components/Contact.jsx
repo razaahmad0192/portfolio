@@ -5,27 +5,28 @@ import { SlLocationPin } from "react-icons/sl";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { Toaster, toast } from "react-hot-toast";
-
+import { FiInstagram } from "react-icons/fi";
+import { FaSquareXTwitter } from "react-icons/fa6";
 function Contact() {
 
     function handleSubmit(e) {
         e.preventDefault();
 
         const formData = new FormData(e.target);
-        
+
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString(),
         })
-        .then(() => {
-            toast.success("Message sent successfully!");
-            e.target.reset(); // optional: clears the form
-        })
-        .catch((error) => toast.error("Something went wrong. Try again."))
+            .then(() => {
+                toast.success("Message sent successfully!");
+                e.target.reset(); // optional: clears the form
+            })
+            .catch((error) => toast.error("Something went wrong. Try again."))
     }
     return (
-        
+
         <section id='contact' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
             <Toaster position="md:top-right " />
 
@@ -105,15 +106,36 @@ function Contact() {
                             </h2>
                             <div className='flex items-center gap-3 pl-5'>
 
-                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'><FaGithub className="w-7 h-7 text-gray-400" /></span>
-                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'> <FaLinkedin className=" w-7 h-7 text-gray-400" /></span>
-                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'><MdOutlineEmail className=" w-7 h-7 text-gray-400" /></span>
+                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'>
+                                    <a href="https://github.com/razaahmad0192" target="_blank" rel="noopener noreferrer"> <FaGithub className="w-7 h-7 text-gray-400" /> </a>
+                                </span>
+
+
+
+                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'>
+                                    <a href="https://www.linkedin.com/in/ahmed-raza-239b21237/" target="_blank" rel="noopener noreferrer">  <FaLinkedin className=" w-7 h-7 text-gray-400" />
+                                    </a>
+                                </span>
+
+
+
+
+                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'>
+                                    <a href="https://www.instagram.com/ahmed_sial_1/" target="_blank" rel="noopener noreferrer">       <FiInstagram className=" w-7 h-7 text-gray-400" />   </a>
+                                </span>
+
+
+
+                                <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'><a href="https://x.com/ahmedsial999" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter className=" w-7 h-7 text-gray-400" /></a>
+                                </span>
+ 
+
 
 
                             </div>
                         </div>
                     </div>
-                  
+
                     <div className='COntact-form border rounded-xl border-gray-800 md:px-6 px-2 md:pt-12 pt-5 pb-6 md:w-full flex flex-col gap-4'>
                         <form
                             name="contact"
@@ -146,10 +168,11 @@ function Contact() {
                                 <label className='font-medium' id='message' htmlFor="message">Message</label>
                                 <textarea className='w-full p-2 h-35  border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
                             </div>
+                               
                             <div>
-
-                                <button className='bg-blue-500 w-full p-3 rounded-xl' type="submit">Send</button>
+                                    <button className='bg-blue-500 hover:bg-blue-800 w-full p-3 rounded-xl' type="submit">Send</button>
                             </div>
+                             
 
 
 

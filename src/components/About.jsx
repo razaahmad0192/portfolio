@@ -1,7 +1,7 @@
 import React from 'react'
 import { FcAbout } from "react-icons/fc";
 import { FiDownload } from "react-icons/fi";
-
+import MotionButton from './MotionButton';
 
 const About = () => {
     return (
@@ -35,7 +35,7 @@ const About = () => {
                          {/* flex md:flex-row md:justify-between  md:items-start
                     flex-col */}
 
-                        <div className='EDU px-4 py-5.5 flex flex-col justify-start gap-5 w-full bg-amber-900 m3 border min-h-60 rounded-2xl'>
+                        <div className='EDU px-4 py-5.5 flex flex-col justify-start gap-5 w-full m3 border min-h-60 rounded-2xl'>
                             <h3 className='text-2xl font-bold '>
                                 Education
                             </h3>
@@ -100,13 +100,17 @@ const About = () => {
                         <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>MongoDb</span>
                         <span className='px-2 rounded-full border py-0.5  bg-gray-900 border-gray-500'>Full Stack</span>
                     </div>
-                    <button className='flex gap-2 text-black bg-blue-500 px-4 py-3 items-center rounded-xl'>
+                    <MotionButton>
+                    <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className='w-full flex gap-2 text-black bg-blue-500 px-4 py-3 items-center rounded-xl'>
                         <FiDownload />
                         <span>
 
                             Download Resume
                         </span>
                     </button>
+                    </a>
+                    </MotionButton>
                 </div>
             </div>
             

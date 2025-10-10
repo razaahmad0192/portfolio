@@ -19,7 +19,7 @@ const Projects = () => {
                 <p>
                     Here are some of the projects I've worked on, showcasing my skills in various technologies and problem domains.
                 </p>
-                <div className='wrapping-projects   border-white  md:px-25 flex flex-col gap-5'>
+                <div className='wrapping-projects   border-white  xl:px-25 flex flex-col gap-5'>
 
 
                     <div className='project-cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 '>
