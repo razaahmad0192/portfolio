@@ -7,29 +7,29 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 const App = () => {
   return (
-    <section className='text-white'>
+    <div className='text-white'>
 
       <Navbar />
 
 
       <Banner />
       <div className='border-1 h-1 border-gray-700 shadow '></div>
-       <div className='min-h-screen flex items-center justify-center'>
+      <div className='min-h-screen flex items-center justify-center'>
 
-      <About />
-       </div>
+        <About />
+      </div>
       <div className='border-1 h-1 border-gray-700 shadow '></div>
-       <div className='min-h-screen flex items-center justify-center '>
-        
-      <Projects />
-       </div>
-      <div className='border-1 h-1 border-gray-700 shadow '></div>
-   
-   
-    <div className='min-h-screen flex items-center justify-center'>
+      <div className='min-h-screen flex items-center justify-center '>
 
-      <Skills />
-    </div>
+        <Projects />
+      </div>
+      <div className='border-1 h-1 border-gray-700 shadow '></div>
+
+
+      <div className='min-h-screen flex items-center justify-center'>
+
+        <Skills />
+      </div>
 
 
 
@@ -41,7 +41,7 @@ const App = () => {
       <div className='min-h-screen flex items-center justify-center'>
         <Contact />
       </div>
-    </section>
+    </div>
   )
 }
 

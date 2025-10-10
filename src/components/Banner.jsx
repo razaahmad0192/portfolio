@@ -5,7 +5,7 @@ import { CgMail } from "react-icons/cg";
 const Banner = () => {
   return (
 
-    <section className="md:container md:mx-auto  flex flex-col items-center justify-around md:flex-row md:items-center md:justify-center py-10 px-4 md:gap-0 gap-5 md:h-[calc(100vh-80px)] 
+    <section id="home" className="md:container md:mx-auto  flex flex-col items-center justify-around md:flex-row md:items-center md:justify-center py-10 px-4 md:gap-0 gap-5 md:h-[calc(100vh-80px)] 
     min-h-[calc(100vh-64px)]   ">
       <div className="flex flex-wrap w-full">
         <div className="w-full  flex flex-col items-center md:items-start  justify-center ">

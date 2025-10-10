@@ -26,3 +26,8 @@ body{
 .border{
   border-color: rgb(31, 41, 55);
 }
+
+html {
+  scroll-padding-top: 80px; 
+  scroll-behavior: smooth;
+}

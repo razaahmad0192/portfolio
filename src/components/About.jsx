@@ -5,7 +5,7 @@ import { FiDownload } from "react-icons/fi";
 
 const About = () => {
     return (
-        <section className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
+        <section id='about' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
 
             <div className='heading-about'>
                 <h2 className='font-extrabold md:text-5xl text-3xl'>

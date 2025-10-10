@@ -9,7 +9,7 @@ import { HiOutlineCpuChip } from "react-icons/hi2";
 
 function Skills() {
     return (
-        <section className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
+        <section id='skills' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
             <div className='heading-about'>
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
                     Skills

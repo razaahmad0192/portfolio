@@ -26,7 +26,7 @@ function Contact() {
     }
     return (
         
-        <section className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
+        <section id='contact' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
             <Toaster position="md:top-right " />
 
             <div className='heading-about'>
@@ -144,7 +144,7 @@ function Contact() {
                             <div className='EMAIL-LABEL flex flex-col gap-1.5'>
 
                                 <label className='font-medium' id='message' htmlFor="message">Message</label>
-                                <textarea className='w-full p-2 h-35 overflow-auto border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
+                                <textarea className='w-full p-2 h-35  border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
                             </div>
                             <div>
 
