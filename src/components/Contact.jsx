@@ -22,12 +22,12 @@ function Contact() {
                 toast.success("Message sent successfully!");
                 e.target.reset(); // optional: clears the form
             })
-            .catch((error) =>  toast.error("Something went wrong. Try again."))
+            .catch((error) => toast.error("Something went wrong. Try again."))
     }
     return (
-        
+
         <section className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
-           
+
             <div className='heading-about'>
                 <h2 className='font-extrabold md:text-5xl text-3xl'>
                     Get In Touch
@@ -112,8 +112,21 @@ function Contact() {
                             </div>
                         </div>
                     </div>
+                    {/* Hidden static form for Netlify detection */}
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                        style={{ display: "none" }}
+                    >
+                        <input type="text" name="name" />
+                        <input type="email" name="email" />
+                        <input type="text" name="subject" />
+                        <textarea name="message" />
+                    </form>
                     <div className='COntact-form border rounded-xl border-gray-800 md:px-6 px-2 md:pt-12 pt-5 pb-6 md:w-full flex flex-col gap-4'>
-                         <Toaster position="md:top-right " />
+                        <Toaster position="md:top-right " />
                         <form
                             name="contact"
                             method="POST"
@@ -137,20 +150,20 @@ function Contact() {
                             </div>
                             <div className='EMAIL-LABEL flex flex-col gap-1.5'>
 
-                            <label className='font-medium' id='subject' htmlFor="subject">Subject</label>
-                            <input className='w-full p-2 border border-gray-800 rounded-lg text-sm' type="text" name="subject" placeholder="How can I help you?" required />
+                                <label className='font-medium' id='subject' htmlFor="subject">Subject</label>
+                                <input className='w-full p-2 border border-gray-800 rounded-lg text-sm' type="text" name="subject" placeholder="How can I help you?" required />
                             </div>
                             <div className='EMAIL-LABEL flex flex-col gap-1.5'>
 
-                            <label className='font-medium' id='message' htmlFor="message">Message</label>
-                            <textarea className='w-full p-2 h-35 overflow-auto border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
+                                <label className='font-medium' id='message' htmlFor="message">Message</label>
+                                <textarea className='w-full p-2 h-35 overflow-auto border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
                             </div>
                             <div>
 
-                            <button className='bg-blue-500 w-full p-3 rounded-xl'  type="submit">Send</button>
+                                <button className='bg-blue-500 w-full p-3 rounded-xl' type="submit">Send</button>
                             </div>
 
-                        
+
 
 
                         </form>
