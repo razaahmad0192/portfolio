@@ -19,10 +19,7 @@ nav ul li {
 nav ul li:hover{
   color: rgb(136, 136, 194);
 }
-body{
-  background-color: hsl(222.2 84% 4.9%)
 
-}
 .border{
   border-color: rgb(31, 41, 55);
 }
@@ -30,19 +27,4 @@ body{
 html {
   scroll-padding-top: 80px; 
   scroll-behavior: smooth;
-}
-:root{
-  --primary-color: white;
-  --secondary-color : rgb(31, 41, 55);;
-  --blue-color : #3B82F6;
-
-}
-.blu4e{
-  color: var(--blue-color);
-}
-.gray{
-  color: var(--secondary-color);
-}
-.white{
-  color: var(--primary-color);
 }

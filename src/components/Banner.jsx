@@ -4,10 +4,11 @@ import { motion } from 'framer-motion';
 import { Link } from "react-scroll";
 import MotionButton from "./MotionButton";
 import HeroWrapper from "./HeroWrapper";
+import Writer from "./Writer";
 const Banner = () => {
   return (
     <>
-     
+
 
       <motion.section
         initial={{ opacity: 0 }}
@@ -24,10 +25,20 @@ const Banner = () => {
             <h1 className="text-4xl md:text-7xl font-bold mb-4 text-center md:text-start text-white">
               Ahmed{" "}<span className='text-blue-500'>Raza</span>
             </h1>
-            <h2 className='text-xl md:text-3xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
-              Full Stack Developer & CyberSecurity Researcher
+            <h2 className='text-xl md:text-4xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
+              <Writer
+                words={[
+                  "Full Stack Developer...",
+                  "Frontend Engineer...",
+                  "Ethical Hacker..."
+                ]}
+
+              />
             </h2>
-            <p className="text-gray-300 text-md text-center md:text-start">
+            {/* <h2 className='text-xl md:text-3xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
+              Full Stack Developer & CyberSecurity Researcher
+            </h2> */}
+            <p className="text-gray-300 md:text-lg text-sm text-center md:text-start">
               Building elegant solutions to complex problems with modern technologies.
             </p>
             <div className='btnss mt-3 flex items-center justify-center flex-wrap md:gap-7 gap-2.5'>
@@ -79,7 +90,7 @@ const Banner = () => {
         </div> */}
         <HeroWrapper>
 
-          <motion.div className="console border md:w-[70%]  p-9 flex flex-col gap-3 rounded-2xl">
+          <motion.div className="console border md:w-[70%]  md:p-9 p-4  flex flex-col gap-3 rounded-2xl">
             <div className="flex justify-between min-h-5 ">
 
               <div className="flex gap-1.5 ">

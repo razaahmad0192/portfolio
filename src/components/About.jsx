@@ -13,8 +13,8 @@ const About = () => {
                 </h2>
                 <div className='border-2 md:w-24 w-16 border-blue-500'></div>
             </div>
-            <div className="about  w-full flex md:flex-row  md:justify-center  flex-col  md:items-start justify-center ">
 
+            <div className="about  w-full flex md:flex-row  md:justify-center  flex-col  md:items-start justify-center ">
 
                 <div className='md:w-[75%] w-full gap-4 flex flex-col px-3  '>
                     <div className="bio  px-4 py-5.5">
@@ -23,7 +23,7 @@ const About = () => {
 
                             Bio
                         </h4>
-                        <p className='pt-2 text-sm'>
+                        <p className='pt-2 text-sm text-gray-300'>
                             I'm a self-taught <b>Web Developer</b> and <b>Ethical Hacker</b> with experience in designing and developing high-performance applications, from ideation to production. <br />
                             Alongside development, I specialize in penetration testing, identifying and mitigating vulnerabilities in web applications to ensure secure deployments. <br />
                             I love combining design, technology, and cybersecurity to build solutions that are not only functional but also resilient. <br />
@@ -84,9 +84,9 @@ const About = () => {
                 </div>
 
 
-                <div className='md:w-[25%] sm:w-[60%] w-[100%] mx-auto  flex flex-col gap-4 p-4'>
-                    <div className="dp">
-                        <img className='w-full rounded-full ' src="/assets/pic.jpg" alt="" />
+                <div className='md:w-[25%] sm:w-[60%] w-[100%] mx-auto  flex flex-col gap-4  p-4'>
+                    <div className="dp    flex items-center justify-center   ;">
+                        <img className='w-65 h-65 lg:w-70 xl:h-70 2xl:h-90 2xl:w-90 rounded-full object-fit: cover; ' src="/assets/pic.jpg" alt="dp" loading='lazy' />
                     </div>
                     <div className='name&profession'>
                         <h2 className='font-bold text-2xl'>
@@ -94,7 +94,7 @@ const About = () => {
                         </h2>
                         <span className='text-gray-300'>Computer Science Student</span>
                     </div>
-                    <div className='text-xs'>
+                    <div className='text-xs flex flex-wrap gap-2'>
                         <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>React</span>
                         <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>Node</span>
                         <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>MongoDb</span>

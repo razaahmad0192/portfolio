@@ -52,8 +52,8 @@ function Skills({Class=""}) {
                             tech1='Recon : Nmap'
                             tech2='Web: BurpSuite'
                             tech3='Exploitation : MetaSploit & SQLMap'
-                            tech4='Vercel'
-                            tech5='OSINT : Amass & Subfinder'
+                            tech4='OSINT: Amass'
+                            
                         />
                     <SkillCard
                         icon={<GoDatabase/>}

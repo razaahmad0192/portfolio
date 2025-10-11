@@ -1,20 +1,21 @@
-import React from 'react'
+import {React, useEffect, useState} from 'react'
 import HamburgerComponent from './HamburgerComponent'
 import { Link } from "react-scroll";
 import { motion } from "framer-motion"
-import { FaMoon } from "react-icons/fa";
 const Navbar = () => {
 
   return (
     <motion.nav initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
-    transition={{ duration: 1 }} className=' flex md:justify-around justify-between md:py-5 py-2 items-center  bg-blue-950 text-white top-0 sticky w-full '>
+    transition={{ duration: 1 }} 
+    className=' flex md:justify-around justify-between md:py-5 py-2 items-center z-10  bg-slate-900 text-white top-0 sticky w-full '>
+      
       <div className="logo pl-3">
         <h2 >Ahm</h2>
       </div>
       <ul className='md:flex gap-5 hidden items-center'>
-        <li>
+        <li className='transition-all'>
           <Link
             to="home"          // same as id in your section
             smooth={true}      // enables smooth scrolling
@@ -60,7 +61,7 @@ const Navbar = () => {
           >Contact</Link>
         </li>
 
-        <li><FaMoon /></li>
+        <li hidden>Theme</li>
         <li><a href="/assets/Resume.pdf"><button className='px-3 py-2 bg-blue-500 rounded-lg border-0 text-black hover:bg-blue-600'>Resume</button></a></li>
       </ul>
       <HamburgerComponent />

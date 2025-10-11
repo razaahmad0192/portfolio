@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const MotionCard = ({ children }) => {
   return (
     <motion.div
+    
       whileHover={{
         scale: 1.05,
         rotate: 1,

@@ -20,9 +20,9 @@ function ProjectCard({
         <>
       <MotionCard>
       
-        <div className='border md:min-h-110 min-h-115 flex flex-col gap-5 p-3 bg-gray-800 rounded-xl  '>
+        <div className='border md:min-h-110 min-h-115 flex flex-col gap-5 p-3 bg-gray-900 rounded-xl  '>
             <div className="thumbNail w-full h-80   ">
-                <img className='object-cover w-full h-full rounded-t-2xl' src={`${thumbnail}`} alt="thumbnail" />
+                <img className='object-cover w-full h-full rounded-t-2xl' loading='lazy' src={`${thumbnail}`} alt="thumbnail" />
             </div>
             <div className='flex flex-col gap-3 '>
                 <h2 className='font-medium text-xl '>{`${name}`}</h2>

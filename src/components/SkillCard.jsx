@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaTerminal } from "react-icons/fa6";
+import MotionCard from './MotionCard';
 
 function SkillCard({
   heading = "",
@@ -13,6 +14,8 @@ function SkillCard({
   tech7 = ""
 }) {
   return (
+    <>
+    <MotionCard>
     <div className='border rounded-2xl p-5 flex flex-col gap-8 w-full min-h-50'>
       <h2 className='flex items-center gap-3 font-semibold text-xl'>
         <span className='text-blue-500'>
@@ -32,6 +35,9 @@ function SkillCard({
 
       </div>
     </div>
+   </MotionCard>
+    </>
+
   )
 }
 

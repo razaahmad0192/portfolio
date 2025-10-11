@@ -10,8 +10,8 @@ const HeroWrapper = ({ children }) => {
 
   const handleMove = (e) => {
     const { innerWidth, innerHeight } = window;
-    const offsetX = (e.clientX - innerWidth / 2) / 40; // smaller value = stronger effect
-    const offsetY = (e.clientY - innerHeight / 2) / 40;
+    const offsetX = (e.clientX - innerWidth / 20) / 40; // smaller value = stronger effect
+    const offsetY = (e.clientY - innerHeight / 20) / 40;
     x.set(offsetX);
     y.set(offsetY);
   };

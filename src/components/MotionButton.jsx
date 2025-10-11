@@ -3,23 +3,21 @@ import { motion } from "framer-motion";
 
 const MotionButton = ({ children, onClick }) => {
   return (
-    <motion.button
+    <motion.div
       onClick={onClick}
       whileHover={{
-        scale: 1.1,           // button grows
+        scale: 1.1,
         boxShadow: "0px 5px 15px rgba(0,0,0,0.3)"
       }}
-      whileTap={{ scale: 0.95 }} // click effect
+      whileTap={{ scale: 0.95 }}
       style={{
-        border: "none",
-        borderRadius: "8px",
-        transition: "all 0.08s ease-in-out"
-        
+        display: "inline-block",
+        transition: "all 0.08s ease-in-out",
+        borderRadius: "8px"
       }}
     >
       {children}
-    </motion.button>
+    </motion.div>
   );
 };
-
 export default MotionButton;

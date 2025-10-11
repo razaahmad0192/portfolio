@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Hamburger from 'hamburger-react'
 import { FaMoon } from "react-icons/fa";
 import { Link } from "react-scroll";
@@ -8,10 +8,16 @@ import { Link } from "react-scroll";
 export default function HamburgerComponent() {
     const [open, setOpen] = useState(false)
 
-    return <div className='md:hidden flex items-center'>
-        <div className='w-[48px] h-[48px] flex items-center justify-center'>
+    const [visible, setVisible] = useState(false);
 
-            <FaMoon />
+    useEffect(() => {
+        setTimeout(() => setVisible(true), 100); // small delay for smooth entry
+    }, []);
+
+    return <div className='md:hidden flex items-center'>
+        <div  className='w-[48px] h-[48px] flex items-center justify-center'>
+
+           {" "}
         </div>
         <Hamburger
             size={18}
@@ -19,9 +25,10 @@ export default function HamburgerComponent() {
             toggled={open}
         />
         {
-            open && <div className='absolute top-0 right-0 w-[60vw] h-screen p-4 text-black bg-white dark:bg-slate-900 dark:text-white'>
+            open && <div className={`absolute top-15 left-0 w-[100vw]   p-4 text-black bg-white dark:bg-slate-900 dark:text-white
+                 `}>
                 <ul className='flex flex-col  gap-5'>
-                    <li className='self-center'><Hamburger size={18} toggled={open} toggle={setOpen} /></li>
+                    <li hidden className='self-center'><Hamburger size={18} toggled={open} toggle={setOpen} /></li>
                     <li>
                         <Link
                             to="home"          // same as id in your section
