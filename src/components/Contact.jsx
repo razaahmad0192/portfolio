@@ -9,22 +9,44 @@ import { FiInstagram } from "react-icons/fi";
 import { FaSquareXTwitter } from "react-icons/fa6";
 function Contact() {
 
+    // function handleSubmit(e) {
+    //     e.preventDefault();
+
+    //     const formData = new FormData(e.target);
+
+    //     fetch("/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         body: new URLSearchParams(formData).toString(),
+    //     })
+    //         .then(() => {
+    //             toast.success("Message sent successfully!");
+    //             e.target.reset(); // optional: clears the form
+    //         })
+    //         .catch((error) => toast.error("Something went wrong. Try again."))
+    // }
     function handleSubmit(e) {
-        e.preventDefault();
+  e.preventDefault();
 
-        const formData = new FormData(e.target);
+  const formData = new FormData(e.target);
 
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-        })
-            .then(() => {
-                toast.success("Message sent successfully!");
-                e.target.reset(); // optional: clears the form
-            })
-            .catch((error) => toast.error("Something went wrong. Try again."))
-    }
+  fetch("https://formspree.io/f/xayzabcd", {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((res) => {
+      if (res.ok) {
+        toast.success("Message sent successfully!");
+        e.target.reset();
+      } else {
+        toast.error("Something went wrong. Try again.");
+      }
+    })
+    .catch(() => toast.error("Network error. Try again."));
+}
     return (
 
         <section id='contact' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
@@ -145,7 +167,7 @@ function Contact() {
                             className='flex flex-col gap-5'
                         >
                             {/* Required hidden input for Netlify DIAAA KUCH TO GARBAR A*/}
-                            <input type="hidden" name="form-name" value="contact" />
+                            {/* <input type="hidden" name="form-name" value="contact" /> */}
                             <div className='NAME_EMAIL grid md:grid-cols-2 grid-cols-1 gap-7 '>
                                 <div className='NAME-LABEL flex flex-col gap-1.5'>
 
