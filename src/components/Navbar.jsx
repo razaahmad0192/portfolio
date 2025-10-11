@@ -12,7 +12,7 @@ const Navbar = () => {
     className=' flex md:justify-around justify-between  items-center z-10  bg-slate-900 text-white top-0 sticky w-full '>
       
       <div className="logo md:h-19 h-14 cursor-pointer flex items-center justify-center">
-        <img className='h-full w-full rounded-full' src="/assets/logo.png" alt="logo" />
+        <img className='h-full w-full rounded-full' src="/assets/logo.webp" alt="logo" />
       </div>
       <ul className='md:flex gap-5 hidden items-center'>
         <li className='transition-all'>

@@ -86,7 +86,7 @@ const About = () => {
 
                 <div className='md:w-[25%] sm:w-[60%] w-[100%] mx-auto  flex flex-col gap-4  p-4'>
                     <div className="dp    flex items-center justify-center   ;">
-                        <img className='w-65 h-65 lg:w-70 xl:h-70 2xl:h-90 2xl:w-90 rounded-full object-fit: cover; ' src="/assets/pic.jpg" alt="dp" loading='lazy' />
+                        <img className='w-65 h-65 lg:w-70 xl:h-70 2xl:h-90 2xl:w-90 rounded-full object-fit: cover; ' src="/assets/pic.webp" alt="dp" loading='lazy' />
                     </div>
                     <div className='name&profession'>
                         <h2 className='font-bold text-2xl'>
