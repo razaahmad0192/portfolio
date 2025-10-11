@@ -8,12 +8,7 @@ import { Link } from "react-scroll";
 export default function HamburgerComponent() {
     const [open, setOpen] = useState(false)
 
-    const [visible, setVisible] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => setVisible(true), 100); // small delay for smooth entry
-    }, []);
-
+   
     return <div className='md:hidden flex items-center'>
         <div  className='w-[48px] h-[48px] flex items-center justify-center'>
 

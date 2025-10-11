@@ -9,10 +9,10 @@ const Navbar = () => {
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 1 }} 
-    className=' flex md:justify-around justify-between md:py-5 py-2 items-center z-10  bg-slate-900 text-white top-0 sticky w-full '>
+    className=' flex md:justify-around justify-between  items-center z-10  bg-slate-900 text-white top-0 sticky w-full '>
       
-      <div className="logo pl-3">
-        <h2 >Ahm</h2>
+      <div className="logo md:h-19 h-14 cursor-pointer flex items-center justify-center">
+        <img className='h-full w-full rounded-full' src="/assets/logo.png" alt="logo" />
       </div>
       <ul className='md:flex gap-5 hidden items-center'>
         <li className='transition-all'>
