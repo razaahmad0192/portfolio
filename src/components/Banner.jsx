@@ -38,7 +38,7 @@ const Banner = () => {
             {/* <h2 className='text-xl md:text-3xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
               Full Stack Developer & CyberSecurity Researcher
             </h2> */}
-            <p className="text-gray-300 md:text-lg text-sm text-center md:text-start">
+            <p className="dark:text-gray-300 text-gray-500 md:text-lg text-sm text-center md:text-start">
               Building elegant solutions to complex problems with modern technologies.
             </p>
             <div className='btnss mt-3 flex items-center justify-center flex-wrap md:gap-7 gap-2.5'>
