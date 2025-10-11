@@ -162,7 +162,7 @@ function Contact() {
                         <form
                             name="contact"
                             method="POST"
-                            data-netlify="true"
+                            // data-netlify="true"
                             onSubmit={handleSubmit}
                             className='flex flex-col gap-5'
                         >
