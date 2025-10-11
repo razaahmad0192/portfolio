@@ -22,7 +22,7 @@ const Banner = () => {
             <span className="text-blue-500  tracking-wide font-semibold block mb-2 md:text-2xl text-lg text-center md:text-start">
               Hello I'm
             </span>
-            <h1 className="text-4xl md:text-7xl font-bold mb-4 text-center md:text-start text-white">
+            <h1 className="text-4xl md:text-7xl font-bold mb-4 text-center md:text-start ">
               Ahmed{" "}<span className='text-blue-500'>Raza</span>
             </h1>
             <h2 className='text-xl md:text-4xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
@@ -104,7 +104,7 @@ const Banner = () => {
             <p>
               <span className="text-pink-600">const </span><span className="text-blue-600">developer </span><span className="text-gray-500"> = </span> <span className="text-orange-500">{"{"}</span>
             </p>
-            <div className="pl-6">
+            <div className="pl-6 ">
 
               <p>
                 <span className="text-purple-600">name</span><span className="text-gray-500"> : </span><span className="text-green-600">'Ahmed Raza' </span><span className="text-gray-500">,</span>
