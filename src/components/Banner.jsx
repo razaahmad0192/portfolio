@@ -22,7 +22,7 @@ const Banner = () => {
             <span className="text-blue-500  tracking-wide font-semibold block mb-2 md:text-2xl text-lg text-center md:text-start">
               Hello I'm
             </span>
-            <h1 className="text-4xl md:text-7xl font-bold mb-4 text-center md:text-start">
+            <h1 className="text-4xl md:text-7xl font-bold mb-4 text-center md:text-start dark:text-white text-gray-900">
               Ahmed{" "}<span className='text-blue-500'>Raza</span>
             </h1>
             <h2 className='text-xl md:text-4xl font-bold mb-4 text-indigo-500 text-center md:text-start'>
