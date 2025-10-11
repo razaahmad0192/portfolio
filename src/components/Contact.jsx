@@ -26,27 +26,27 @@ function Contact() {
     //         .catch((error) => toast.error("Something went wrong. Try again."))
     // }
     function handleSubmit(e) {
-  e.preventDefault();
+        e.preventDefault();
 
-  const formData = new FormData(e.target);
+        const formData = new FormData(e.target);
 
-  fetch("https://formspree.io/f/xayzabcd", {
-    method: "POST",
-    body: formData,
-    headers: {
-      Accept: "application/json",
-    },
-  })
-    .then((res) => {
-      if (res.ok) {
-        toast.success("Message sent successfully!");
-        e.target.reset();
-      } else {
-        toast.error("Something went wrong. Try again.");
-      }
-    })
-    .catch(() => toast.error("Network error. Try again."));
-}
+        fetch("https://formspree.io/f/xkgqqbkq", {
+            method: "POST",
+            body: formData,
+            headers: {
+                Accept: "application/json",
+            },
+        })
+            .then((res) => {
+                if (res.ok) {
+                    toast.success("Message sent successfully!");
+                    e.target.reset();
+                } else {
+                    toast.error("Something went wrong. Try again.");
+                }
+            })
+            .catch(() => toast.error("Network error. Try again."));
+    }
     return (
 
         <section id='contact' className='md:container md:mx-auto py-10 px-4  flex flex-col gap-10'>
@@ -150,7 +150,7 @@ function Contact() {
 
                                 <span className=' p-2 rounded-full cursor-pointer bg-gray-700 hover:bg-blue-500'><a href="https://x.com/ahmedsial999" target="_blank" rel="noopener noreferrer"><FaSquareXTwitter className=" w-7 h-7 text-gray-400" /></a>
                                 </span>
- 
+
 
 
 
@@ -190,11 +190,11 @@ function Contact() {
                                 <label className='font-medium' id='message' htmlFor="message">Message</label>
                                 <textarea className='w-full p-2 h-35  border border-gray-800 rounded-lg text-sm' name="message" placeholder="Your Message here..." required ></textarea>
                             </div>
-                               
+
                             <div>
-                                    <button className='bg-blue-500 hover:bg-blue-800 w-full p-3 rounded-xl' type="submit">Send</button>
+                                <button className='bg-blue-500 hover:bg-blue-800 w-full p-3 rounded-xl' type="submit">Send</button>
                             </div>
-                             
+
 
 
 
