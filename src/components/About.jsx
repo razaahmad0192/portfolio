@@ -95,10 +95,10 @@ const About = () => {
                         <span className='text-gray-300'>Computer Science Student</span>
                     </div>
                     <div className='text-xs flex flex-wrap gap-2'>
-                        <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>React</span>
-                        <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>Node</span>
-                        <span className='px-2 rounded-full border py-0.5 bg-gray-900 border-gray-500'>MongoDb</span>
-                        <span className='px-2 rounded-full border py-0.5  bg-gray-900 border-gray-500'>Full Stack</span>
+                        <span className='px-2 rounded-full border py-0.5 dark:bg-gray-900 border-gray-500'>React</span>
+                        <span className='px-2 rounded-full border py-0.5 dark:bg-gray-900 border-gray-500'>Node</span>
+                        <span className='px-2 rounded-full border py-0.5 dark:bg-gray-900 border-gray-500'>MongoDb</span>
+                        <span className='px-2 rounded-full border py-0.5  dark:bg-gray-900 border-gray-500'>Full Stack</span>
                     </div>
                     <MotionButton>
                     <a href="/assets/Resume.pdf" target="_blank" rel="noopener noreferrer">

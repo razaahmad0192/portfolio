@@ -25,11 +25,11 @@ function ProjectCard({
                 <img className='object-cover w-full h-full rounded-t-2xl' loading='lazy' src={`${thumbnail}`} alt="thumbnail" />
             </div>
             <div className='flex flex-col gap-3 '>
-                <h2 className='font-medium text-xl '>{`${name}`}</h2>
+                <h2 className='font-medium text-xl text-white  '>{`${name}`}</h2>
                 <p className='font-normal text-xs md:text-sm text-gray-300 '>
                     {`${disc}`}
                 </p>
-                <div className='text-xs flex gap-1.5'>
+                <div className='text-xs flex gap-1.5 text-white'>
                     {tech1 && <span className='border px-2 py-1 rounded-full'>{`${tech1}`}</span>}
                     {tech2 && <span className='border px-2 py-1 rounded-full'>{`${tech2}`}</span>}
                     {tech3 && <span className='border px-2 py-1 rounded-full'>{`${tech3}`}</span>}
