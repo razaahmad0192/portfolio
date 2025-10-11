@@ -9,7 +9,7 @@ import LazyComponent from './components/LazyComponent'
 import ScrollComponent from './components/ScrollComponent'
 const App = () => {
   return (
-    <div className='text-white '>
+    <div className=''>
       <ScrollComponent/>
 
       <Navbar />
