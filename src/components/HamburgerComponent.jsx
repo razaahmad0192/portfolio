@@ -1,7 +1,6 @@
 'use client';
 import { useState,useEffect } from 'react'
 import Hamburger from 'hamburger-react'
-import { FaMoon } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 
