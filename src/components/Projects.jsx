@@ -24,6 +24,17 @@ const Projects = () => {
 
                     <div className='project-cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 '>
                         <ProjectCard
+                            thumbnail='/assets/school.webp'
+                            name='Modern Educational Institute Website'
+                            disc='A responsive school website built for "Sial English Public School" using React and Tailwind. It feature sections for programs, admissions, Islamic education, contact form and an Integrated Google Map for location.'
+                            // isGithub={false}
+                            // githubLink='https://github.com/razaahmad0192/Spotify-Clone'
+                            isLive={true}
+                            liveLink='https://sialschool.vercel.app/'
+                            tech1='React'
+                            tech2='Tailwind'
+                        />
+                        <ProjectCard
                             thumbnail='/assets/spotify.webp'
                             name='Spotify - Media Player'
                             disc='A dynamic music player that reads songs directly from a local directory and plays them with full controls. Built with JavaScript, it mimics Spotify’s interface with playlist handling, progress tracking, and responsive design.'
@@ -34,18 +45,7 @@ const Projects = () => {
                             tech2='CSS'
                             tech3='Vanilla JavaScript'
                         />
-                        <ProjectCard
-                            thumbnail='/assets/netflix.webp'
-                            name='Netflix - Landing Page '
-                            disc='A responsive front-end clone of Netflix’s homepage built with HTML, CSS, and Vanilla JavaScript. Features smooth animations, interactive UI elements, and a modern layout inspired by the original design.'
-                            isGithub={true}
-                            githubLink='https://github.com/razaahmad0192/Netflix-Clonee'
-                            isLive={true}
-                            liveLink='https://netflis-landing-page.netlify.app/'
-                            tech1='Html'
-                            tech2='CSS'
-                            tech3='Vanilla JavaScript'
-                        />
+                       
                         <ProjectCard
                             thumbnail='/assets/todo.webp'
                             name='iTask - ToDo List Manager'
@@ -63,6 +63,18 @@ const Projects = () => {
                     </div>
                     {/* Hidden Cards */}
                     <div className={`${showAll ? 'grid' : 'hidden'}  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5`}>
+                         <ProjectCard
+                            thumbnail='/assets/netflix.webp'
+                            name='Netflix - Landing Page '
+                            disc='A responsive front-end clone of Netflix’s homepage built with HTML, CSS, and Vanilla JavaScript. Features smooth animations, interactive UI elements, and a modern layout inspired by the original design.'
+                            isGithub={true}
+                            githubLink='https://github.com/razaahmad0192/Netflix-Clonee'
+                            isLive={true}
+                            liveLink='https://netflis-landing-page.netlify.app/'
+                            tech1='Html'
+                            tech2='CSS'
+                            tech3='Vanilla JavaScript'
+                        />
                         <ProjectCard
                             thumbnail='/assets/x.webp'
                             name='X - Tweet Page'
