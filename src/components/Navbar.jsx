@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from 'react'
+import {React} from 'react'
 import HamburgerComponent from './HamburgerComponent'
 import { Link } from "react-scroll";
 import { motion } from "framer-motion"
