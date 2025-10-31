@@ -34,17 +34,20 @@ const Projects = () => {
                             tech1='React'
                             tech2='Tailwind'
                         />
-                        <ProjectCard
-                            thumbnail='/assets/spotify.webp'
-                            name='Spotify - Media Player'
-                            disc='A dynamic music player that reads songs directly from a local directory and plays them with full controls. Built with JavaScript, it mimics Spotify’s interface with playlist handling, progress tracking, and responsive design.'
+                         <ProjectCard
+                            thumbnail='/assets/locksafe.webp'
+                            name='LockSafe - Digital Password Manager'
+                            disc='A fullstack password manager called Locksafe built with React and Express. It offers signup login system, secure password storage with encryption, autofill support, data backup, and activity tracking.'
                             isGithub={true}
-                            githubLink='https://github.com/razaahmad0192/Spotify-Clone'
-
-                            tech1='Html'
-                            tech2='CSS'
-                            tech3='Vanilla JavaScript'
+                            githubLink='https://github.com/razaahmad0192/password-manager'
+                            // isLive={true}
+                            // liveLink='https://sialschool.vercel.app/'
+                            tech3='React.js'
+                            tech2='Express'
+                            tech1='MongoDB'
+                            tech4='Node.js'
                         />
+                        
                        
                         <ProjectCard
                             thumbnail='/assets/todo.webp'
@@ -63,6 +66,17 @@ const Projects = () => {
                     </div>
                     {/* Hidden Cards */}
                     <div className={`${showAll ? 'grid' : 'hidden'}  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5`}>
+                        <ProjectCard
+                            thumbnail='/assets/spotify.webp'
+                            name='Spotify - Media Player'
+                            disc='A dynamic music player that reads songs directly from a local directory and plays them with full controls. Built with JavaScript, it mimics Spotify’s interface with playlist handling, progress tracking, and responsive design.'
+                            isGithub={true}
+                            githubLink='https://github.com/razaahmad0192/Spotify-Clone'
+
+                            tech1='Html'
+                            tech2='CSS'
+                            tech3='Vanilla JavaScript'
+                        />
                          <ProjectCard
                             thumbnail='/assets/netflix.webp'
                             name='Netflix - Landing Page '
