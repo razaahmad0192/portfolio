@@ -24,6 +24,19 @@ const Projects = () => {
 
                     <div className='project-cards grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 '>
                         <ProjectCard
+                            thumbnail='/assets/fitlinks.webp'
+                            name='FitLinks — Fast URL Shortener'
+                            disc='FitLinks is a clean and fast URL shortener that allows users to create short, custom links easily. It features a simple and responsive dashboard for managing URLs and supports custom aliases. Built for reliability, speed, and simplicity.'
+                            isGithub={true}
+                            githubLink='https://github.com/razaahmad0192/link-shortener'
+                            isLive={true}
+                            liveLink='https://fitlinks-url.vercel.app/'
+                            tech1='Next.js'
+                            tech2='Tailwind'
+                            tech3='MongoDb'
+                            tech4='Framer-Motion'
+                        />
+                        <ProjectCard
                             thumbnail='/assets/school.webp'
                             name='Modern Educational Institute Website'
                             disc='A responsive school website built for "Sial English Public School" using React and Tailwind. It feature sections for programs, admissions, Islamic education, contact form and an Integrated Google Map for location.'
@@ -49,6 +62,11 @@ const Projects = () => {
                         />
                         
                        
+                        
+
+                    </div>
+                    {/* Hidden Cards */}
+                    <div className={`${showAll ? 'grid' : 'hidden'}  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5`}>
                         <ProjectCard
                             thumbnail='/assets/todo.webp'
                             name='iTask - ToDo List Manager'
@@ -62,10 +80,6 @@ const Projects = () => {
                             tech3='Framer-Motion'
 
                         />
-
-                    </div>
-                    {/* Hidden Cards */}
-                    <div className={`${showAll ? 'grid' : 'hidden'}  md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5`}>
                         <ProjectCard
                             thumbnail='/assets/spotify.webp'
                             name='Spotify - Media Player'
