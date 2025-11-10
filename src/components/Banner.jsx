@@ -15,7 +15,7 @@ const Banner = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        id="home" className="md:container md:mx-auto  flex flex-col items-center justify-around md:flex-row md:items-center md:justify-center py-10 px-4 md:gap-0 gap-5 md:h-[calc(100vh-80px)] 
+        id="home" className="md:container md:mx-auto  flex flex-col items-center justify-around md:flex-row md:items-center md:justify-center py-10 md:px-10 xl:px-4 px-4 md:gap-0 gap-5 md:h-[calc(100vh-80px)] 
     min-h-[calc(100vh-64px)]   ">
         <div className="flex flex-wrap w-full">
           <div className="w-full  flex flex-col items-center md:items-start  justify-center ">
@@ -90,7 +90,7 @@ const Banner = () => {
         </div> */}
         <HeroWrapper>
 
-          <motion.div className="console border md:w-[70%]  md:p-9 p-4  flex flex-col gap-3 rounded-2xl">
+          <motion.div className="console text-xs md:text-base   border md:w-[70%]  md:p-9 p-4  flex flex-col gap-3 rounded-2xl">
             <div className="flex justify-between min-h-5 ">
 
               <div className="flex gap-1.5 ">

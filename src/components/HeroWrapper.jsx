@@ -18,7 +18,7 @@ const HeroWrapper = ({ children }) => {
 
   return (
     <motion.div
-    className="w-full h-full flex items-center justify-center"
+    className="w-full h-full flex items-center justify-center xl:justify-end"
       onMouseMove={handleMove}
       style={{
         x: smoothX,
